@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yoğurtlu Tantuni Tarifi</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+        .malzeme-listesi {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .malzeme-listesi th,
+        .malzeme-listesi td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .malzeme-listesi th {
+            background-color: #a04747;
+            text-align: left;
+            color: white;
+        }
+
+        .checkbox-kutu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox-kutu input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+
+        .ana-sayfa {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #a04747;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        body {
+            background-color: powderblue;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #a04747;
+            padding: 8px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: white;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="text-align: center;">
+        <a href="index.html" class="ana-sayfa">Ana Sayfaya Dön</a>
+    </div>
+
+    <h2 style="text-align: center;">Yoğurtlu Tantuni Tarifi</h2>
+
+    <div style="text-align: center;">
+        <a href="yogurtluTantuni.html">
+            <img src="resimler/tantuni.jpg" alt="Yoğurtlu Tantuni" width="260">
+        </a>
+        <br>
+    </div>
+
+    <h3 style="text-align: center;">Malzemeler</h3>
+
+    <table>
+        <tr>
+            <th>Malzeme İsmi</th>
+            <th>Miktarı</th>
+        </tr>
+        <tr>
+            <td>Lavaş</td>
+            <td>4 adet</td>
+        </tr>
+        <tr>
+            <td>Pamuk yağı / Sıvı yağ</td>
+            <td>5 yemek kaşığı</td>
+        </tr>
+        <tr>
+            <td>İnce doğranmış tavuk göğsü</td>
+            <td>300 gram</td>
+        </tr>
+        <tr>
+            <td>Toz kırmızı biber</td>
+            <td>1 yemek kaşığı</td>
+        </tr>
+        <tr>
+            <td>Tuz</td>
+            <td>1 tutam</td>
+        </tr>
+        <tr>
+            <td>Su</td>
+            <td>1/2 su bardağı</td>
+        </tr>
+        <tr>
+            <td>Kıyılmış maydanoz</td>
+            <td>1/4 demet</td>
+        </tr>
+        <tr>
+            <td>Doğranmış domates</td>
+            <td>2 adet</td>
+        </tr>
+        <tr>
+            <td>Piyazlık doğranmış soğan</td>
+            <td>1 adet</td>
+        </tr>
+        <tr>
+            <td>Çırpılmış yoğurt (isteğe bağlı sarımsaklı)</td>
+            <td>1 kase</td>
+        </tr>
+        <tr>
+            <td>Sıvı yağ</td>
+            <td>2 yemek kaşığı</td>
+        </tr>
+        <tr>
+            <td>Pul biber</td>
+            <td>1 tutam</td>
+        </tr>
+    </table>
+
+    <h3>Malzeme Kontrol Listesi (Checkbox)</h3>
+
+    <table class="malzeme-listesi">
+        <tr>
+            <th>Kontrol</th>
+            <th>Malzeme İsmi</th>
+            <th>Miktarı</th>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Lavaş</td>
+            <td>4 adet</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Pamuk yağı / Sıvı yağ</td>
+            <td>5 yemek kaşığı</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Tavuk göğsü</td>
+            <td>300 gram</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Toz kırmızı biber</td>
+            <td>1 yemek kaşığı</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Tuz</td>
+            <td>1 tutam</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Su</td>
+            <td>1/2 su bardağı</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Maydanoz</td>
+            <td>1/4 demet</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Domates</td>
+            <td>2 adet</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Soğan</td>
+            <td>1 adet</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Yoğurt</td>
+            <td>1 kase</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Sıvı yağ</td>
+            <td>2 yemek kaşığı</td>
+        </tr>
+        <tr>
+            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td>Pul biber</td>
+            <td>1 tutam</td>
+        </tr>
+    </table>
+
+    <h3>Yoğurtlu Tantuni Nasıl Yapılır?</h3>
+
+    <p>Yoğurtlu tantuni yapmak için önce 300-400 gram jülyen doğranmış dana biftek ya da kontrfile eti hazırlanır. Etin
+        daha yumuşak olması istenirse önceden 10-15 dakika kadar haşlanabilir, ancak orijinal tantunide bu aşama
+        gerekmez. Geniş bir tavada 2 yemek kaşığı sıvı yağ ısıtılır ve etler yüksek ateşte suyunu salıp çekene kadar
+        kavrulur. Etler kavrulunca içine 1 çay kaşığı kırmızı toz biber, 1 çay kaşığı pul biber (isteğe göre
+        artırılabilir) ve damak zevkine göre tuz eklenir. Baharatlarla birlikte birkaç dakika daha kavrulan etin içine
+        az miktarda sıcak su eklenerek 4-5 dakika yumuşaması sağlanabilir.</p>
+
+    <p>Ayrı bir kapta 1 su bardağı süzme yoğurt iyice çırpılır. Yoğurt sade kullanılabileceği gibi içine ezilmiş
+        sarımsak ve bir tutam tuz da eklenerek lezzeti artırılabilir. Servis tabağına yayılmış yoğurdun üzerine sıcak
+        etler dikkatlice yerleştirilir. Arzuya göre tavada kalan yağa biraz tereyağı eklenerek eritilir ve yoğurdun
+        üzerine gezdirilir. Yanına ince doğranmış maydanoz, küp doğranmış domates ve sumakla ovulmuş kırmızı soğan
+        eklenerek sunum tamamlanır. Yoğurtlu tantuni, tercihe göre yanında lavaşla ya da ekmeksiz servis edilebilir.</p>
+
+    <p><strong>Afiyet olsun!</strong></p>
+
+    <div style="height: 60px;"></div>
+
+    <div class="footer">
+        <a href="KolBoregi.html">Kol Böreği</a>
+        <a href="YogurtluYumurta.html">Yoğurtlu Yumurta</a>
+        <a href="yumurtalıSimit.html">Yumurtalı Simit</a>
+        <a href="yogurtluTantuni.html">Yoğurtlu Tantuni</a>
+        <a href="hatayKagıtKebabı.html">Kağıt Kebabı</a>
+        <a href="Tantuni.html">Tantuni</a>
+        <a href="cagKebabı.html">Cağ Kebabı</a>
+        <a href="koriSosluMakarna.html">Köri Makarna</a>
+        <a href="sultanKebabı.html">Sultan Kebabı</a>
+    </div>
+
+</body>
+
+</html>

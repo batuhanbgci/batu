@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üye Bilgileri</title>
+    <style>
+        .back-to-home {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #a04747;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-to-home:hover {
+            background-color: #c56b6b;
+        }
+
+        .back-to-dorm {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: #a04747;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-to-dorm:hover {
+            background-color: #c56b6b;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var degerler = new URLSearchParams(window.location.search);
+        var username = degerler.get("name");
+        var password = degerler.get("pass");
+
+        document.write("<p>Kayıt Onaylandı. Kullanıcı Adınız: </p>" + username + "<p>Şifreniz:</p>" + password);
+    </script>
+
+    <a href="index.html" class="back-to-home">Ana Sayfaya Dön</a>
+
+    <div style="height: 60px;"></div>
+
+    <div
+        style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #a04747; padding: 8px 0; text-align: center; z-index: 1000; box-shadow: 0 -2px 8px rgba(0,0,0,0.1); font-size: 14px;">
+        <a href="KolBoregi.html">Kol Böreği</a>
+        <a href="YogurtluYumurta.html">Yoğurtlu Yumurta</a>
+        <a href="yumurtalıSimit.html">Yumurtalı Simit</a>
+        <a href="yogurtluTantuni.html">Yoğurtlu Tantuni</a>
+        <a href="hatayKagıtKebabı.html">Kağıt Kebabı</a>
+        <a href="Tantuni.html">Tantuni</a>
+        <a href="cagKebabı.html">Cağ Kebabı</a>
+        <a href="koriSosluMakarna.html">Köri Makarna</a>
+        <a href="sultanKebabı.html">Sultan Kebabı</a>
+    </div>
+
+
+    <a href="form.html" class="back-to-form">Giriş bilgilerinin girildiği sayfaya dön</a>
+
+</body>
+
+</html>

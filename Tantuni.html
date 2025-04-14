@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yoğurtlu Tantuni Tarifi</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+        .malzeme-listesi {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .malzeme-listesi th,
+        .malzeme-listesi td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .malzeme-listesi th {
+            background-color: #a04747;
+            text-align: left;
+            color: white;
+        }
+
+        .checkbox-kutu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox-kutu input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+
+
+        .ana-sayfa {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #a04747;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body style="background-color: powderblue;">
+
+    <div style="text-align: center;">
+        <a href="index.html" class="ana-sayfa">Ana Sayfaya Dön</a>
+    </div>
+
+    <h2 style="text-align: center;">Yoğurtlu Tantuni Tarifi (2-4 Kişilik)</h2>
+
+    <div style="text-align: center;">
+        <a href="Tantuni.html">
+            <img src="resimler/yoğurtsuz tantuni.jpg" alt="Yoğurtlu Tantuni" width="310">
+        </a>
+        <br>
+    </div>
+
+    <h3>Malzemeler</h3>
+
+    <table>
+        <tr>
+            <th>Malzeme İsmi</th>
+            <th>Miktarı</th>
+        </tr>
+        <tr>
+            <td>Tandır lavaşı</td>
+            <td>4 adet</td>
+        </tr>
+        <tr>
+            <td>Dana kontrfile (ince doğranmış)</td>
+            <td>400 gram</td>
+        </tr>
+        <tr>
+            <td>Pamuk yağı</td>
+            <td>1/2 çay bardağı</td>
+        </tr>
+        <tr>
+            <td>Tuz</td>
+            <td>1/4 çay kaşığı</td>
+        </tr>
+        <tr>
+            <td>Toz kırmızı biber</td>
+            <td>1 yemek kaşığı</td>
+        </tr>
+        <tr>
+            <td>Su</td>
+            <td>1/2 çay bardağı</td>
+        </tr>
+        <tr>
+            <td>Maydanoz (isteğe göre)</td>
+            <td>1/4 demet</td>
+        </tr>
+        <tr>
+            <td>Domates (isteğe göre)</td>
+            <td>2 adet</td>
+        </tr>
+        <tr>
+            <td>Soğan (isteğe göre)</td>
+            <td>1 adet</td>
+        </tr>
+    </table>
+
+    <h3>Malzeme Kontrol Listesi (Checkbox)</h3>
+
+    <table class="malzeme-listesi">
+        <tr>
+            <th>Kontrol</th>
+            <th>Malzeme İsmi</th>
+            <th>Miktarı</th>
+        </tr>
+        <tr>
+            <td>
+                <label class="checkbox-kutu">
+                    <input type="checkbox">
+                </label>
+            </td>
+            <td>Tandır lavaşı</td>
+            <td>4 adet</td>
+        </tr>
+        <tr>
+            <td>
+                <label class="checkbox-kutu">
+                    <input type="checkbox">
+                </label>
+            </td>
+            <td>Dana kontrfile (ince doğranmış)</td>
+            <td>400 gram</td>
+        </tr>
+        <tr>
+            <td>
+                <label class="checkbox-kutu">
+                    <input type="checkbox">
+                </label>
+            </td>
+            <td>Pamuk yağı</td>
+            <td>1/2 çay bardağı</td>
+        </tr>
+        <tr>
+            <td>
+                <label class="checkbox-kutu">
+                    <input type="checkbox">
+                </label>
+            </td>
+            <td>Tuz</td>
+            <td>1/4 çay kaşığı</td>
+        </tr>
+        <tr>
+            <td>
+                <label class="checkbox-kutu">
+                    <input type="checkbox">
+                </label>
+            </td>
+            <td>Toz kırmızı biber</td>
+            <td>1 yemek kaşığı</td>
+        </tr>
+        <tr>
+            <td>
+                <label class="checkbox-kutu">
+                    <input type="checkbox">
+                </label>
+            </td>
+            <td>Su</td>
+            <td>1/2 çay bardağı</td>
+        </tr>
+        <tr>
+            <td>
+                <label class="checkbox-kutu">
+                    <input type="checkbox">
+                </label>
+            </td>
+            <td>Maydanoz (isteğe göre)</td>
+            <td>1/4 demet</td>
+        </tr>
+        <tr>
+            <td>
+                <label class="checkbox-kutu">
+                    <input type="checkbox">
+                </label>
+            </td>
+            <td>Domates (isteğe göre)</td>
+            <td>2 adet</td>
+        </tr>
+        <tr>
+            <td>
+                <label class="checkbox-kutu">
+                    <input type="checkbox">
+                </label>
+            </td>
+            <td>Soğan (isteğe göre)</td>
+            <td>1 adet</td>
+        </tr>
+    </table>
+
+    <h3>Yoğurtlu Tantuni Nasıl Yapılır?</h3>
+
+    <p>1) İnce doğranmış dana kontrfileyi pamuk yağı ile birlikte tavada kavurun.<br>
+        2) Toz biberi, tuzu ve suyu ekleyip karıştırın.<br>
+        3) Lavaşları tavada hafifçe ısıtın.<br>
+        4) Etleri lavaşlara sarın. Üzerine çırpılmış yoğurt (isteğe göre sarımsaklı) dökün.<br>
+        5) Maydanoz, domates ve soğanla servis yapın. Afiyet olsun!</p>
+
+    <div style="height: 60px;"></div>
+
+    <div
+        style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #a04747; padding: 8px 0; text-align: center; z-index: 1000; box-shadow: 0 -2px 8px rgba(0,0,0,0.1); font-size: 14px;">
+        <a href="KolBoregi.html" style="color: white; margin: 0 8px; text-decoration: none;">Kol Böreği</a>
+        <a href="YogurtluYumurta.html" style="color: white; margin: 0 8px; text-decoration: none;">Yoğurtlu Yumurta</a>
+        <a href="yumurtalıSimit.html" style="color: white; margin: 0 8px; text-decoration: none;">Yumurtalı Simit</a>
+        <a href="yogurtluTantuni.html" style="color: white; margin: 0 8px; text-decoration: none;">Yoğurtlu Tantuni</a>
+        <a href="hatayKagıtKebabı.html" style="color: white; margin: 0 8px; text-decoration: none;">Kağıt Kebabı</a>
+        <a href="Tantuni.html" style="color: white; margin: 0 8px; text-decoration: none;">Tantuni</a>
+        <a href="cagKebabı.html" style="color: white; margin: 0 8px; text-decoration: none;">Cağ Kebabı</a>
+        <a href="koriSosluMakarna.html" style="color: white; margin: 0 8px; text-decoration: none;">Köri Makarna</a>
+        <a href="sultanKebabı.html" style="color: white; margin: 0 8px; text-decoration: none;">Sultan Kebabı</a>
+    </div>
+</body>
+
+</html>
