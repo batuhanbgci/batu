@@ -45,6 +45,19 @@
             border-radius: 5px;
         }
 
+        /* Baharat resmi için özel stil */
+        .baharat-resim {
+            width: 800px;
+            height: 600px;
+            display: block;
+            margin: 0 auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            position: static;
+            pointer-events: auto;
+        }
+
         a {
             display: block;
             margin-top: 10px;
@@ -62,7 +75,24 @@
             flex-wrap: wrap;
             margin-bottom: 40px;
         }
+
+        /* Image map container */
+        .image-map-container {
+            text-align: center;
+            margin: 20px auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            width: fit-content;
+        }
     </style>
+    <style>
+        img[usemap] {
+            position: static !important;
+            pointer-events: auto !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -97,6 +127,44 @@
             </a>
             <a target="_blank" href="sayfalar/yumurtalıSimit.html">Yumurtalı Simit</a>
         </div>
+    </div>
+
+
+    <h4>Faydalı Baharatlar (imagemap) </h4>
+    <div style="text-align: center; margin: 20px auto; display: inline-block;">
+        <img src="resimler/baharatlar.jpg" alt="Baharatlar" usemap="#baharatmap"
+            style="max-width:100%; height:auto; border:1px solid #ddd; border-radius:5px;">
+
+        <map name="baharatmap">
+            <area shape="rect" coords="0,2,80,74" href="sayfalar/nane.html" target="_blank" alt="Nane" title="Nane">
+
+            <!-- Nane -->
+            <area shape="rect" coords="0,2,80,74" href="sayfalar/nane.html" target="_blank" alt="Nane" title="Nane">
+            <!-- Sumak -->
+            <area shape="rect" coords="82,1,163,74" href="sayfalar/sumak.html" target="_blank" alt="Sumak"
+                title="Sumak">
+            <!-- Kekik -->
+            <area shape="rect" coords="167,1,226,75" href="sayfalar/kekik.html" target="_blank" alt="Kekik"
+                title="Kekik">
+            <!-- Zencefil -->
+            <area shape="rect" coords="0,76,81,148" href="sayfalar/zencefil.html" target="_blank" alt="Zencefil"
+                title="Zencefil">
+            <!-- Biberiye -->
+            <area shape="rect" coords="83,76,153,147" href="sayfalar/biberiye.html" target="_blank" alt="Biberiye"
+                title="Biberiye">
+            <!-- Zerdeçal -->
+            <area shape="rect" coords="157,77,225,147" href="sayfalar/zerdecal.html" target="_blank" alt="Zerdeçal"
+                title="Zerdeçal">
+            <!-- Kimyon -->
+            <area shape="rect" coords="2,154,75,222" href="sayfalar/kimyon.html" target="_blank" alt="Kimyon"
+                title="Kimyon">
+            <!-- Pul Biber -->
+            <area shape="rect" coords="75,155,145,221" href="sayfalar/pulbiber.html" target="_blank" alt="Pul Biber"
+                title="Pul Biber">
+            <!-- Karabiber -->
+            <area shape="rect" coords="148,154,224,222" href="sayfalar/karabiber.html" target="_blank" alt="Karabiber"
+                title="Karabiber">
+        </map>
     </div>
 
     <h4>Ana Yemekler - Ana Yemek Tarifleri</h4>
@@ -139,17 +207,15 @@
         <div class="card">
             <a href="sayfalar/sultanKebabı.html">
                 <img src="resimler/tavuklu-sultan-kebabi-resimli-yemek-tarifi(20).jpg" alt="Sultan Kebabı">
-
             </a>
             <a target="_blank" href="sayfalar/sultanKebabı.html">Sultan Kebabı Tarifi</a>
         </div>
     </div>
 
-    <div style="height: 60px;"></div> <!-- Alt menü için boşluk bırakır -->
+    <div style="height: 60px;"></div>
 
     <div
         style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #a04747; padding: 8px 0; text-align: center; z-index: 1000; box-shadow: 0 -2px 8px rgba(0,0,0,0.1); font-size: 14px; white-space: nowrap; overflow-x: auto;">
-        <!-- Tüm öğeler tek satırda -->
         <a href="sayfalar/sss.html"
             style="color: white; margin: 0 8px; text-decoration: none; display: inline-block;">SSS</a>
         <span style="color: white; display: inline-block;">|</span>
