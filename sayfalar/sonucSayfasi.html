@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonuç Sayfası</title>
+    <script>
+        // Sayfa yüklendiğinde çalışacak fonksiyon
+        window.onload = function () {
+            // LocalStorage'tan verileri alıyoruz
+            const ad = localStorage.getItem("ad"); // Ad bilgisini localStorage'dan al
+            const yas = localStorage.getItem("yas"); // Yaş bilgisini localStorage'dan al
+
+            // Eğer veriler varsa, tabloya ekliyoruz
+            if (ad && yas) { // Eğer hem ad hem de yaş verisi varsa
+                const tablo = document.getElementById("sonucTablosu"); // Tabloyu seçiyoruz
+
+                // Yeni bir satır ekliyoruz
+                const yeniSatir = tablo.insertRow(); // Yeni bir satır ekler
+
+                // Satıra hücreler ekliyoruz
+                const hucre1 = yeniSatir.insertCell(0); // Yeni satırın ilk hücresini ekler
+                hucre1.textContent = ad; // Ad bilgisini bu hücreye ekler
+
+                const hucre2 = yeniSatir.insertCell(1); // Yeni satırın ikinci hücresini ekler
+                hucre2.textContent = yas; // Yaş bilgisini bu hücreye ekler
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Sonuçlar</h1> <!-- Sayfa başlığı -->
+    <table border="1" id="sonucTablosu"> <!-- Sonuçları göstermek için tablo -->
+        <thead>
+            <tr>
+                <th>Ad</th> <!-- Tablo başlığı Ad -->
+                <th>Yaş</th> <!-- Tablo başlığı Yaş -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Burada formdan alınan veriler tabloda gösterilecek -->
+        </tbody>
+    </table>
+    <br>
+    <a href="formSayfasi.html">Başka veri gir</a> <!-- Kullanıcıyı form sayfasına yönlendirir -->
+</body>
+
+</html>

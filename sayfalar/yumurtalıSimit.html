@@ -1,75 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yumurtalı Simit Tarifi</title>
-    <style>
-        table,
-        th,
-        td {
-            border: 2px solid black;
-            border-collapse: collapse;
-            padding: 8px;
-        }
-
-        .malzeme-listesi {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .malzeme-listesi th,
-        .malzeme-listesi td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        .malzeme-listesi th {
-            background-color: #a04747;
-            text-align: left;
-        }
-
-        .checkbox-kutu {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .checkbox-kutu input[type="checkbox"] {
-            width: 16px;
-            height: 16px;
-        }
-
-        .ana-sayfa {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #a04747;
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body style="background-color: powderblue;">
+<body>
 
-    <div style="text-align: center;">
-        <a href="../index.html" class="ana-sayfa">Ana Sayfaya Dön</a>
-    </div>
+    <a href="../index.html" class="ana-sayfa">Ana Sayfaya Dön</a>
 
-    <h2 style="text-align: center;">Yumurtalı Simit Tarifi (2 Kişilik)</h2>
+    <h2 class="center">Yumurtalı Simit Tarifi (2 Kişilik)</h2>
 
-    <div style="text-align: center;">
+    <div class="center">
         <a href="yumurtalıSimit.html">
-            <img src="../resimler/yumurtali-simit-yemekcom.jpg" alt="Yumurtalı Simit Tarifi" width="330">
+            <img src="../resimler/yumurtali-simit-yemekcom.jpg" alt="Yumurtalı Simit" width="330">
         </a>
-        <br>
     </div>
 
     <h3>Malzemeler</h3>
-
     <table>
         <tr>
             <th>Malzeme İsmi</th>
@@ -98,7 +49,6 @@
     </table>
 
     <h3>Malzeme Kontrol Listesi (Checkbox)</h3>
-
     <table class="malzeme-listesi">
         <tr>
             <th>Kontrol</th>
@@ -106,59 +56,55 @@
             <th>Miktarı</th>
         </tr>
         <tr>
-            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td><input type="checkbox"></td>
             <td>Simit</td>
             <td>2 adet</td>
         </tr>
         <tr>
-            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td><input type="checkbox"></td>
             <td>Yumurta</td>
             <td>2 adet</td>
         </tr>
         <tr>
-            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td><input type="checkbox"></td>
             <td>Süt</td>
             <td>Yarım çay bardağı</td>
         </tr>
         <tr>
-            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td><input type="checkbox"></td>
             <td>Tuz</td>
             <td>2 tutam</td>
         </tr>
         <tr>
-            <td><label class="checkbox-kutu"><input type="checkbox"></label></td>
+            <td><input type="checkbox"></td>
             <td>Sıvı yağ</td>
             <td>3 yemek kaşığı</td>
         </tr>
     </table>
 
     <h3>Yumurtalı Simit Nasıl Yapılır?</h3>
+    <p>1) Simitleri çok kalın olmayacak şekilde dilimleyin. Bir kaba yumurtaları kırın, süt ve tuz ekleyip iyice
+        çırpın.<br>
+        2) Tavada sıvı yağı kızdırın. Simit dilimlerini yumurtalı karışıma batırarak tavaya alın.<br>
+        3) Her iki yüzünü de altın sarısı olana kadar kızartın.<br>
+        4) Sıcak servis edin. Yanına beyaz peynir ve domates çok yakışır! 🍅🧀</p>
 
-    <p>Simitleri çok kalın olmayacak şekilde dilimleyin. Derin bir kaba yumurtaları kırın, süt ve tuz ekleyerek güzelce
-        çırpın.</p>
-
-    <p>Tavaya sıvı yağı alın ve ısıtın. Simit dilimlerini yumurtalı karışıma batırarak tavaya yerleştirin.</p>
-
-    <p>Her iki tarafı da altın rengi olana kadar kızartın. Sıcak servis edin. Yanına beyaz peynir ve domates çok
-        yakışır! 🍅🧀</p>
     <div class="navbar">
-        <a href="tel:+901234567890" target="_blank">Telefon</a><br>
-        <a href="sss.html" target="_blank">SSS</a><br>
+        <a href="tel:+901234567890">Telefon</a> |
+        <a href="sss.html">SSS</a> |
         <a href="mailto:batuhan.bagci.mis@gmail.com">Mail At</a>
     </div>
 
-    <div style="height: 60px;"></div>
-    <div
-        style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #a04747; padding: 8px 0; text-align: center; z-index: 1000; box-shadow: 0 -2px 8px rgba(0,0,0,0.1); font-size: 14px;">
-        <a href="KolBoregi.html" style="color: white; margin: 0 8px; text-decoration: none;">Kol Böreği</a>
-        <a href="YogurtluYumurta.html" style="color: white; margin: 0 8px; text-decoration: none;">Yoğurtlu Yumurta</a>
-        <a href="yumurtalıSimit.html" style="color: white; margin: 0 8px; text-decoration: none;">Yumurtalı Simit</a>
-        <a href="yogurtluTantuni.html" style="color: white; margin: 0 8px; text-decoration: none;">Yoğurtlu Tantuni</a>
-        <a href="hatayKagıtKebabı.html" style="color: white; margin: 0 8px; text-decoration: none;">Kağıt Kebabı</a>
-        <a href="Tantuni.html" style="color: white; margin: 0 8px; text-decoration: none;">Tantuni</a>
-        <a href="cagKebabı.html" style="color: white; margin: 0 8px; text-decoration: none;">Cağ Kebabı</a>
-        <a href="koriSosluMakarna.html" style="color: white; margin: 0 8px; text-decoration: none;">Köri Makarna</a>
-        <a href="sultanKebabı.html" style="color: white; margin: 0 8px; text-decoration: none;">Sultan Kebabı</a>
+    <div class="footer-links">
+        <a href="KolBoregi.html">Kol Böreği</a>
+        <a href="YogurtluYumurta.html">Yoğurtlu Yumurta</a>
+        <a href="yumurtalıSimit.html">Yumurtalı Simit</a>
+        <a href="yogurtluTantuni.html">Yoğurtlu Tantuni</a>
+        <a href="hatayKagıtKebabı.html">Kağıt Kebabı</a>
+        <a href="Tantuni.html">Tantuni</a>
+        <a href="cagKebabı.html">Cağ Kebabı</a>
+        <a href="koriSosluMakarna.html">Köri Makarna</a>
+        <a href="sultanKebabı.html">Sultan Kebabı</a>
     </div>
 
 </body>

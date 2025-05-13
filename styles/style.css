@@ -1,0 +1,407 @@
+/* Genel Sayfa Ayarları */
+body {
+    background-color: powderblue;
+    /* Arka plan rengi */
+    font-family: Arial, sans-serif;
+    /* Yazı tipi */
+    margin: 0;
+    /* Sayfa kenar boşluklarını sıfırlar */
+    padding: 0 0 80px 0;
+    /* Footer için alt boşluk */
+    color: #333;
+    /* Yazı rengi */
+    text-align: center;
+    /* Metin hizalama */
+}
+
+/* Başlıklar */
+h1,
+h2,
+h3,
+h4 {
+    color: #a04747;
+    /* Başlıkların rengi */
+    margin: 20px 0;
+    /* Başlıklar arasındaki boşluk */
+}
+
+/* Link Ayarları */
+a {
+    color: darkslategray;
+    /* Link rengi */
+    text-decoration: none;
+    /* Alt çizgiyi kaldır */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Hover ile alt çizgi ekler */
+    color: #a04747;
+    /* Hoverda link rengi */
+}
+
+/* Sabit Butonlar */
+.ana-sayfa,
+.login-button,
+.anasayfa-button,
+.oyun-butonu {
+    position: fixed;
+    /* Butonları sayfanın sabit bir yerine yerleştirir */
+    top: 10px;
+    /* Üstten 10px boşluk bırakır */
+    background-color: #a04747;
+    /* Buton arka plan rengi */
+    color: white;
+    /* Buton yazı rengi */
+    padding: 10px 15px;
+    /* İçerik boşlukları */
+    border-radius: 6px;
+    /* Kenar yuvarlatma */
+    font-weight: bold;
+    /* Kalın yazı */
+    z-index: 999;
+    /* Diğer öğelerin üstünde görünmesini sağlar */
+    text-decoration: none;
+    /* Alt çizgiyi kaldırır */
+}
+
+.ana-sayfa {
+    right: 20px;
+    /* Sağdan 20px boşluk bırakır */
+}
+
+.login-button {
+    right: 20px;
+    /* Sağdan 20px boşluk bırakır */
+}
+
+.anasayfa-button {
+    right: 10px;
+    /* Sağdan 10px boşluk bırakır */
+}
+
+.oyun-butonu {
+    left: 20px;
+    /* Soldan 20px boşluk bırakır */
+}
+
+.ana-sayfa:hover,
+.login-button:hover,
+.anasayfa-button:hover,
+.oyun-butonu:hover {
+    background-color: #7a2f2f;
+    /* Hoverda butonun arka plan rengi değişir */
+    text-decoration: underline;
+    /* Alt çizgi ekler */
+}
+
+/* Footer */
+.footer,
+.footer-links {
+    position: fixed;
+    /* Sayfanın alt kısmına sabitler */
+    bottom: 0;
+    /* Alt kısmına yerleştirir */
+    left: 0;
+    /* Sol kısma yerleştirir */
+    right: 0;
+    /* Sağ kısma yerleştirir */
+    background-color: #a04747;
+    /* Arka plan rengi */
+    padding: 10px 0;
+    /* İçerik boşlukları */
+    text-align: center;
+    /* Metin ortalama */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge efekti */
+    font-size: 14px;
+    /* Yazı boyutu */
+    z-index: 1000;
+    /* Diğer öğelerin üstünde görünmesini sağlar */
+}
+
+.footer a,
+.footer-links a {
+    color: white;
+    /* Link yazı rengi */
+    margin: 0 8px;
+    /* Linkler arasındaki boşluk */
+}
+
+.footer a:hover,
+.footer-links a:hover {
+    color: #ffd700;
+    /* Hoverda link rengi değişir */
+    text-decoration: underline;
+    /* Alt çizgi ekler */
+}
+
+/* Kart ve Görseller */
+.card,
+.form-container,
+.oyun-kapsayici,
+.image-map-container {
+    background-color: white;
+    /* Arka plan rengi */
+    margin: 20px auto;
+    /* Üst ve alt boşluk, ortalanmış */
+    padding: 10px;
+    /* İçerik boşlukları */
+    border-radius: 10px;
+    /* Kenar yuvarlatma */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Gölge efekti */
+    display: inline-block;
+    /* Satır içinde yerleşim */
+    text-align: center;
+    /* Metin ortalama */
+}
+
+img,
+.baharat-resmi,
+.responsive-image,
+.tarif-resmi {
+    width: 100%;
+    /* Görselin genişliği */
+    max-width: 330px;
+    /* Maksimum genişlik */
+    height: auto;
+    /* Yükseklik orantılı olarak ayarlanır */
+    background-color: #eee;
+    /* Arka plan rengi */
+    padding: 5px;
+    /* İçerik boşlukları */
+    border-radius: 5px;
+    /* Kenar yuvarlatma */
+}
+
+/* Tablolar */
+table {
+    margin: 20px auto;
+    /* Üst ve alt boşluk, ortalanmış */
+    width: 90%;
+    /* Genişlik */
+    max-width: 600px;
+    /* Maksimum genişlik */
+    border-collapse: collapse;
+    /* Kenarların birleşmesini sağlar */
+    background-color: white;
+    /* Arka plan rengi */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    /* Kenarlık rengi */
+    padding: 8px;
+    /* Hücre içi boşluk */
+    text-align: left;
+    /* Yazı hizalaması */
+}
+
+th {
+    background-color: #a04747;
+    /* Başlık hücre arka plan rengi */
+    color: white;
+    /* Başlık yazı rengi */
+}
+
+/* Formlar ve Butonlar */
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="reset"],
+button {
+    padding: 10px;
+    /* İçerik boşlukları */
+    margin: 10px auto;
+    /* Üst ve alt boşluk, ortalanmış */
+    border-radius: 5px;
+    /* Kenar yuvarlatma */
+    border: 1px solid #ccc;
+    /* Kenarlık rengi */
+    width: 80%;
+    /* Genişlik */
+    font-size: 16px;
+    /* Yazı boyutu */
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+    background-color: #a04747;
+    /* Arka plan rengi */
+    color: white;
+    /* Yazı rengi */
+    border: none;
+    /* Kenarlık yok */
+    cursor: pointer;
+    /* Fare üzerinde el işareti */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    background-color: #c56b6b;
+    /* Hoverda buton arka plan rengi */
+}
+
+/* Checkbox ve Malzeme Listesi */
+.malzeme-listesi input[type="checkbox"] {
+    width: 16px;
+    /* Checkbox genişliği */
+    height: 16px;
+    /* Checkbox yüksekliği */
+}
+
+.checkbox-kutu {
+    display: flex;
+    /* Esnek kutu düzeni */
+    align-items: center;
+    /* Dikey hizalama */
+    justify-content: center;
+    /* Yatay hizalama */
+    gap: 8px;
+    /* Elemanlar arası boşluk */
+}
+
+/* Navbar */
+.navbar {
+    text-align: center;
+    /* Metin ortalama */
+    margin: 30px 0;
+    /* Üst ve alt boşluk */
+}
+
+.navbar a {
+    color: #a04747;
+    /* Link rengi */
+    text-decoration: none;
+    /* Alt çizgi kaldır */
+    margin: 0 8px;
+    /* Linkler arasındaki boşluk */
+    font-weight: bold;
+    /* Kalın yazı */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    /* Hoverda alt çizgi ekler */
+}
+
+/* Responsive Tasarım */
+@media (max-width: 600px) {
+    .ana-sayfa {
+        padding: 8px;
+        /* Butonun iç boşluğunu küçültür */
+        font-size: 14px;
+        /* Buton yazı boyutunu küçültür */
+    }
+
+    table {
+        width: 95%;
+        /* Tabloyu yüzde 95 genişlikte yapar */
+    }
+
+    .navbar a,
+    .footer-links a {
+        display: inline-block;
+        /* Linkleri satıra yerleştirir */
+        margin: 4px;
+        /* Linkler arasındaki boşluğu küçültür */
+        font-size: 12px;
+        /* Yazı boyutunu küçültür */
+    }
+}
+
+/* Ana Sayfa Butonu Sağ Üstte */
+.ana-sayfa {
+    position: fixed;
+    /* Sabit konum */
+    top: 20px;
+    /* Üstten 20px boşluk bırakır */
+    right: 20px;
+    /* Sağdan 20px boşluk bırakır */
+    background-color: #a04747;
+    /* Arka plan rengi */
+    color: white;
+    /* Yazı rengi */
+    padding: 10px 15px;
+    /* İçerik boşlukları */
+    border-radius: 5px;
+    /* Kenar yuvarlatma */
+    z-index: 999;
+    /* Diğer öğelerin üstünde görünmesini sağlar */
+    font-weight: bold;
+    /* Kalın yazı */
+    text-decoration: none;
+    /* Alt çizgi kaldır */
+}
+
+.ana-sayfa:hover {
+    background-color: #7a2f2f;
+    /* Hoverda arka plan rengi değişir */
+}
+
+/* Geri dönme butonu */
+.back-to-home {
+    position: fixed;
+    /* Sabit konum */
+    top: 10px;
+    /* Üstten 10px boşluk bırakır */
+    right: 10px;
+    /* Sağdan 10px boşluk bırakır */
+    background-color: #a04747;
+    /* Arka plan rengi */
+    color: white;
+    /* Yazı rengi */
+    padding: 10px 20px;
+    /* İçerik boşlukları */
+    border-radius: 5px;
+    /* Kenar yuvarlatma */
+    font-size: 16px;
+    /* Yazı boyutu */
+    text-decoration: none;
+    /* Alt çizgi kaldır */
+    z-index: 1000;
+    /* Diğer öğelerin üstünde görünmesini sağlar */
+}
+
+.back-to-home:hover {
+    background-color: #7a2f2f;
+    /* Hoverda arka plan rengi değişir */
+    text-decoration: underline;
+    /* Hoverda alt çizgi ekler */
+}
+
+
+/* Form sayfasına yönlendiren butonun stilini ayarlıyoruz */
+.form-sayfasi-butonu {
+    text-align: center;
+    /* Butonun ortalanmasını sağlıyoruz */
+    margin-top: 30px;
+    /* Butonun üst kısmında boşluk bırakıyoruz */
+}
+
+.form-sayfasi-butonu button {
+    background-color: #4CAF50;
+    /* Yeşil arka plan */
+    color: white;
+    /* Beyaz yazı rengi */
+    padding: 15px 32px;
+    /* İç boşluk */
+    font-size: 16px;
+    /* Yazı boyutu */
+    border: none;
+    /* Kenarlık yok */
+    border-radius: 5px;
+    /* Kenar yuvarlama */
+    cursor: pointer;
+    /* Fare üzerine geldiğinde el işareti */
+}
+
+/* Hover efekti */
+.form-sayfasi-butonu button:hover {
+    background-color: #45a049;
+    /* Hoverda arka plan rengini değiştir */
+}

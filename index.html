@@ -5,103 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yemek Tarifi</title>
-    <style>
-        body {
-            background-color: #FF0000;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        h4 {
-            text-align: center;
-            color: darkblue;
-            margin: 30px;
-        }
-
-        table {
-            margin: 0 auto;
-        }
-
-        td {
-            text-align: center;
-            padding: 15px;
-        }
-
-        .card {
-            background-color: white;
-            padding: 10px;
-            margin: 10px;
-            width: 250px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        img {
-            width: 230px;
-            height: 150px;
-            background-color: #eee;
-            padding: 5px;
-            border-radius: 5px;
-        }
-
-        /* Baharat resmi için özel stil */
-        .baharat-resim {
-            width: 800px;
-            height: 600px;
-            display: block;
-            margin: 0 auto;
-            background-color: white;
-            padding: 10px;
-            border-radius: 10px;
-            position: static;
-            pointer-events: auto;
-        }
-
-        a {
-            display: block;
-            margin-top: 10px;
-            color: darkslategray;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .row {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-
-        /* Image map container */
-        .image-map-container {
-            text-align: center;
-            margin: 20px auto;
-            background-color: white;
-            padding: 10px;
-            border-radius: 10px;
-            width: fit-content;
-        }
-    </style>
-    <style>
-        img[usemap] {
-            position: static !important;
-            pointer-events: auto !important;
-        }
-    </style>
-
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/myscript.js" defer></script>
 </head>
 
 <body>
 
-    <div style="position: fixed; top: 10px; right: 20px; z-index: 999;">
-        <a href="sayfalar/form.html"
-            style="padding: 10px 15px; background-color: #a04747; color: white; border-radius: 6px; text-decoration: none;">
-            log in
-        </a>
+    <div class="login-button">
+        <a href="sayfalar/form.html">log in</a> <!-- Log in butonu -->
     </div>
 
     <h4>Kahvaltı İçin Tarifler - Kahvaltılıklar</h4>
@@ -128,7 +39,6 @@
             <a target="_blank" href="sayfalar/yumurtalıSimit.html">Yumurtalı Simit</a>
         </div>
     </div>
-
 
     <h4>Ana Yemekler - Ana Yemek Tarifleri</h4>
     <div class="row">
@@ -175,59 +85,56 @@
         </div>
     </div>
 
-    <h4>Faydalı Baharatlar (imagemap) </h4>
-    <div style="text-align: center; margin: 20px auto; display: inline-block;">
-        <img src="resimler/baharatlar.jpg" alt="Baharatlar" usemap="#baharatmap"
-            style="max-width:100%; height:auto; border:1px solid #ddd; border-radius:5px;">
+    <h4>Faydalı Baharatlar (imagemap)</h4>
+
+    <!-- Baharat görseli ve harita alanı -->
+    <div class="image-map-container">
+        <img src="resimler/baharatlar.jpg" alt="Baharatlar" usemap="#baharatmap" class="baharat-resmi">
 
         <map name="baharatmap">
+            <!-- Baharat alanları -->
             <area shape="rect" coords="0,2,80,74" href="sayfalar/nane.html" target="_blank" alt="Nane" title="Nane">
-
-            <!-- Nane -->
-            <area shape="rect" coords="0,2,80,74" href="sayfalar/nane.html" target="_blank" alt="Nane" title="Nane">
-            <!-- Sumak -->
             <area shape="rect" coords="82,1,163,74" href="sayfalar/sumak.html" target="_blank" alt="Sumak"
                 title="Sumak">
-            <!-- Kekik -->
             <area shape="rect" coords="167,1,226,75" href="sayfalar/kekik.html" target="_blank" alt="Kekik"
                 title="Kekik">
-            <!-- Zencefil -->
             <area shape="rect" coords="0,76,81,148" href="sayfalar/zencefil.html" target="_blank" alt="Zencefil"
                 title="Zencefil">
-            <!-- Biberiye -->
             <area shape="rect" coords="83,76,153,147" href="sayfalar/biberiye.html" target="_blank" alt="Biberiye"
                 title="Biberiye">
-            <!-- Zerdeçal -->
             <area shape="rect" coords="157,77,225,147" href="sayfalar/zerdecal.html" target="_blank" alt="Zerdeçal"
                 title="Zerdeçal">
-            <!-- Kimyon -->
             <area shape="rect" coords="2,154,75,222" href="sayfalar/kimyon.html" target="_blank" alt="Kimyon"
                 title="Kimyon">
-            <!-- Pul Biber -->
             <area shape="rect" coords="75,155,145,221" href="sayfalar/pulbiber.html" target="_blank" alt="Pul Biber"
                 title="Pul Biber">
-            <!-- Karabiber -->
             <area shape="rect" coords="148,154,224,222" href="sayfalar/karabiber.html" target="_blank" alt="Karabiber"
                 title="Karabiber">
         </map>
     </div>
 
-
-    <div style="height: 60px;"></div>
-
-    <div
-        style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #a04747; padding: 8px 0; text-align: center; z-index: 1000; box-shadow: 0 -2px 8px rgba(0,0,0,0.1); font-size: 14px; white-space: nowrap; overflow-x: auto;">
-        <a href="sayfalar/sss.html"
-            style="color: white; margin: 0 8px; text-decoration: none; display: inline-block;">SSS</a>
-        <span style="color: white; display: inline-block;">|</span>
-        <a href="mailto:batuhan.bagci.mis@gmail.com"
-            style="color: white; margin: 0 8px; text-decoration: none; display: inline-block;">Mail</a>
-        <span style="color: white; display: inline-block;">|</span>
-        <a href="tel:+901234567890"
-            style="color: white; margin: 0 8px; text-decoration: none; display: inline-block;">Telefon</a>
+    <!-- Form Sayfasına Git Butonu -->
+    <div class="form-sayfasi-butonu">
+        <button onclick="window.location.href='sayfalar/formSayfasi.html'">Form Sayfasına Git</button>
     </div>
-    <br>
-    <br>
+
+    <!-- Footer Boşluğu -->
+    <div class="footer-space"></div>
+
+    <!-- Footer Alanı -->
+    <div class="footer">
+        <a href="sayfalar/sss.html">SSS</a>
+        <span>|</span>
+        <a href="mailto:batuhan.bagci.mis@gmail.com">Mail</a>
+        <span>|</span>
+        <a href="tel:+901234567890">Telefon</a>
+    </div>
+
+    <!-- Oyun Butonu -->
+    <div class="oyun-butonu">
+        <a href="sayfalar/jsapp.html">🎮 Oyun Oyna</a>
+    </div>
+
 </body>
 
 </html>

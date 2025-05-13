@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Girişi Formu</title>
+    <script>
+        // Form verilerini alıp localStorage'a kaydeden fonksiyon
+        function formVerileriniYolla(event) {
+            event.preventDefault(); // Formun sayfa yenilemesini engeller
+            const ad = document.getElementById("ad").value; // Kullanıcının girdiği ad bilgisi
+            const yas = document.getElementById("yas").value; // Kullanıcının girdiği yaş bilgisi
+
+            // Verileri localStorage'a kaydediyoruz
+            localStorage.setItem("ad", ad); // Ad bilgisini localStorage'a kaydet
+            localStorage.setItem("yas", yas); // Yaş bilgisini localStorage'a kaydet
+
+            // Verilerin kaydedildiği sonuç sayfasına yönlendiriyoruz
+            window.location.href = "sonucSayfasi.html"; // Kullanıcıyı sonucSayfasi.html sayfasına yönlendir
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Veri Girişi Formu</h1> <!-- Sayfa başlığı -->
+    <form onsubmit="formVerileriniYolla(event)"> <!-- Form gönderildiğinde formVerileriniYolla fonksiyonu çalışacak -->
+        <label for="ad">Adınız:</label> <!-- Ad için etiket -->
+        <input type="text" id="ad" name="ad" required> <!-- Ad girişi için metin kutusu -->
+        <br><br> <!-- Boşluk bırakmak için satır sonu -->
+
+        <label for="yas">Yaşınız:</label> <!-- Yaş için etiket -->
+        <input type="number" id="yas" name="yas" required> <!-- Yaş girişi için sayısal kutu -->
+        <br><br> <!-- Boşluk bırakmak için satır sonu -->
+
+        <input type="submit" value="Verileri Gönder"> <!-- Formu gönder butonu -->
+    </form>
+</body>
+
+</html>
